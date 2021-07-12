@@ -71,6 +71,8 @@ decomposed_matrix.shape
 
 ****************
 
+** Correlation Matrix **
+
 correlation_matrix = np.corrcoef(decomposed_matrix)
 correlation_matrix.shape
 
@@ -90,6 +92,7 @@ correlation_product_ID = correlation_matrix[product_ID]
 correlation_product_ID.shape
 
 ****************
+** Recommending top 10 highly correlated products in sequence **
 
 Recommend = list(X.index[correlation_product_ID > 0.90])
 
